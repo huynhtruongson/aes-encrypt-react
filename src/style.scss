@@ -1,0 +1,13 @@
+$text-color: #000;
+@mixin flexbox($justify:center,$align:center,$wrap:wrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+@mixin absoblute-center($top:50%,$left:50%) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate(-50%,-50%);
+}
